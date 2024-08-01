@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Practice</title>
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <h3>HTML FORMS</h3>
+    <form action="" method="post">
+      <fieldset>
+        <legend>Contact Details</legend>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="phone_number">Phone Number:</label>
+        <input type="tel" id="phone_number" name="phone_number" />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age" />
+      </fieldset>
+      <fieldset>
+        <legend>Delivery Details</legend>
+
+        <label for="street_address">Street Address:</label>
+        <input type="text" id="street_address" name="street_address" />
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" />
+
+        <label for="zip_code">Zip Code:</label>
+        <input type="text" id="zip_code" name="zip_code" />
+      </fieldset>
+      <fieldset>
+        <legend>What would you like to drink?</legend>
+
+        <div>
+          <input type="radio" name="drink" id="coffee" value="coffee" />
+          <label for="coffee">Coffee</label>
+        </div>
+
+        <div>
+          <input type="radio" name="drink" id="tea" value="tea" />
+          <label for="tea">Tea</label>
+        </div>
+
+        <div>
+          <input type="radio" name="drink" id="soda" value="soda" />
+          <label for="soda">Soda</label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Ticket Type</legend>
+        <div>
+          <input type="radio" id="child" name="ticket_type" value="child" />
+          <label for="child">Child</label>
+        </div>
+        <div>
+          <input type="radio" id="adult" name="ticket_type" value="adult" />
+          <label for="adult">Adult</label>
+        </div>
+
+        <div>
+          <input type="radio" id="senior" name="ticket_type" value="senior" />
+          <label for="senior">Senior</label>
+        </div>
+        <div class="select-wrapper">
+          <br />
+          <label for="Car">Select Car</label>
+          <select name="Car">
+            <option value="mercedes">Mercedes</option>
+            <option value="tesla">Tesla</option>
+            <option value="volvo">Volvo</option>
+            <option value="bmw">BMW</option>
+            <option value="mini">Mini</option>
+            <option value="ford">Ford</option>
+          </select>
+        </div>
+        <div class="submit-footer">
+          <button class="submit" type="submit">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+    <!--
+    <main class="parent">
+      <div class="child group1">
+        <h4>
+          FIRST OUTER Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </h4>
+        <div class="grand-child group1">
+          <p>
+            FIRST Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            necessitatibus, soluta quis ipsum beatae dolorum, nihil asperiores
+            non ipsam eveniet velit facere quisquam molestiae esse totam vitae
+            pariatur! Adipisci, aspernatur.
+          </p>
+          <div>
+            <h4>
+              FIRST INNERLorem ipsum, dolor sit amet consectetur adipisicing
+              elit.
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="child group2">
+        <h4>
+          SECOND OUTER Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </h4>
+        <div class="grand-child group2">
+          <p>
+            SECOND Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Earum necessitatibus, soluta quis ipsum beatae dolorum, nihil
+            asperiores non ipsam eveniet velit facere quisquam molestiae esse
+            totam vitae pariatur! Adipisci, aspernatur.
+          </p>
+          <div>
+            <h4>
+              SECOND INNERLorem ipsum, dolor sit amet consectetur adipisicing
+              elit.
+            </h4>
+          </div>
+        </div>
+      </div>
+      <div class="child group3">
+        <h4>
+          THIRD OUTER Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </h4>
+        <div class="grand-child group3">
+          <p>
+            THIRD Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
+            necessitatibus, soluta quis ipsum beatae dolorum, nihil asperiores
+            non ipsam eveniet velit facere quisquam molestiae esse totam vitae
+            pariatur! Adipisci, aspernatur.
+          </p>
+          <div>
+            <h4>
+              THIRD INNERLorem ipsum, dolor sit amet consectetur adipisicing
+              elit.
+            </h4>
+          </div>
+        </div>
+      </div>
+    </main>
+    <ul>
+      <li>First</li>
+      <li>Second</li>
+      <li>Third</li>
+      <li>Fourth</li>
+    </ul>
+    <ol>
+      <li><a href="">First</a></li>
+      <li><a href="">Second</a></li>
+      <li><a href="">Third</a></li>
+      <li><a href="">Fourth</a></li>
+    </ol>
+    <div>Let's <span class="emojify">emojify</span>this span!</div>
+
+    <img
+      src="https://www.allrecipes.com/thmb/7JDE5xQ8SqcjOIKOsCfM_wYslpw=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/8871929-huevos-rancheros-brunch-casserole-with-ham-and-cheese-photo-by-allrecipes-cf0a705863084109862d618f6cef9121.jpg"
+      alt="Ham and Cheese"
+    />
+    <img
+      src="https://www.allrecipes.com/thmb/HmACw3LAft4rPP7kTUD2KaQwluA=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/974003_Strawberry-Cream-Cheese-French-Toast-4x3-5e3dad973ad84da6acd82dd1927e1714.jpg"
+      alt="Strawberry"
+    />
+    <img
+      src="https://www.allrecipes.com/thmb/Pjp5QhrH9oKKVZA6T-3GwB7Le6M=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/southern-grits-casserole-4ddaa8d01fd541bfb583ade1c348962a.jpeg"
+      alt="Casserole"
+    />
+     <div class="table">
+      <plate />
+      <plate />
+    </div> -->
+  </body>
+</html>

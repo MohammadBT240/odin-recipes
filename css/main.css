@@ -1,0 +1,144 @@
+fieldset {
+  border: 1px dotted;
+}
+
+input {
+  /* styles for input not in a label  */
+  border: tomato 2px solid;
+  box-shadow: inset 1px 1px 3px #ccc;
+  border-radius: 5px;
+}
+input:hover {
+  border: #7bffd7bd 1px dotted;
+}
+label {
+  /* styles for label */
+  font-family: system-ui;
+  /* font-size: 1.25rem; */
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.submit-footer {
+  padding: 10px 30rem;
+  position: relative;
+  align-items: center;
+
+  & button:hover {
+    color: black;
+    box-shadow: 5px 5px 5px #ccc;
+  }
+}
+
+.submit {
+  font-size: large;
+  width: fit-content;
+  border: solid 1px;
+  border-radius: 8px;
+  min-height: fit-content;
+  background-color: #7bffd7bd;
+}
+
+/* main div {
+  color: aqua;
+} 
+
+main > div {
+  color: red;
+}
+*/
+
+/* main > div > div {
+  text-shadow: 10cap;
+  color: red;
+} */
+
+/* This rule will only select the div with the class child group1 */
+/* .group1 + div {
+  color: slategray;
+} */
+
+/* This rule will select all of .group1's siblings - in this case the 2nd and 3rd .child divs */
+/* .group1 ~ div {
+  text-transform: uppercase;
+  color: aqua;
+} */
+
+/* This rule will only select the div with the class child group2 */
+/* .group2 + div:hover {
+  color: slategray;
+}
+
+main > div:first-child {
+  color: green;
+}
+
+ul > li:first-child {
+  color: green;
+} 
+
+ul > li:focus {
+  color: green;
+}
+
+/* ol > li a:visited {
+  color: none;
+  text-decoration: none;
+}
+
+ol > li::first-letter {
+  color: red;
+  text-decoration: dotted;
+}
+
+ol > li > a {
+  text-decoration: none;
+}
+
+ */
+.emojify::before {
+  content: "😎 🥸 🤓";
+}
+
+.emojify::after {
+  content: "🤓 🥸 😎";
+}
+
+[src] {
+  /* max-width: 10%; */
+}
+
+img[src="https://www.allrecipes.com/thmb/Pjp5QhrH9oKKVZA6T-3GwB7Le6M=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/southern-grits-casserole-4ddaa8d01fd541bfb583ade1c348962a.jpeg"]
+{
+  /* height: 100%; */
+}
+
+[class^="aus"] {
+  /* Classes are attributes too!
+     This will target any class that begins with 'aus':
+     class='austria'
+     class='australia'
+   */
+}
+
+[src$=".jpg"] {
+  /* This will target any src attribute that ends in '.jpg':
+   src='puppy.jpg'
+   src='kitten.jpg'
+   */
+}
+
+[for*="ill"] {
+  /* This will target any for attribute that has 'ill' anywhere inside it:
+   for="bill"
+   for="jill"
+   for="silly"
+   for="ill"
+   */
+}
